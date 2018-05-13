@@ -1,0 +1,10 @@
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.csprojResolveAssemblyReference.cache
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.Form1.resources
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.Properties.Resources.resources
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.csproj.GenerateResource.Cache
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.csproj.CoreCompileInputs.cache
+A:\寒假作業\Homework\天數計算\bin\Debug\天數計算.exe.config
+A:\寒假作業\Homework\天數計算\bin\Debug\天數計算.exe
+A:\寒假作業\Homework\天數計算\bin\Debug\天數計算.pdb
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.exe
+A:\寒假作業\Homework\天數計算\obj\Debug\天數計算.pdb

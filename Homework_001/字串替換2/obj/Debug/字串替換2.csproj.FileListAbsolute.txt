@@ -1,0 +1,7 @@
+A:\寒假作業\Homework\字串替換2\bin\Debug\字串替換2.exe.config
+A:\寒假作業\Homework\字串替換2\bin\Debug\字串替換2.exe
+A:\寒假作業\Homework\字串替換2\bin\Debug\字串替換2.pdb
+A:\寒假作業\Homework\字串替換2\obj\Debug\字串替換2.csproj.CoreCompileInputs.cache
+A:\寒假作業\Homework\字串替換2\obj\Debug\字串替換2.exe
+A:\寒假作業\Homework\字串替換2\obj\Debug\字串替換2.pdb
+A:\寒假作業\Homework\字串替換2\obj\Debug\字串替換2.csprojResolveAssemblyReference.cache

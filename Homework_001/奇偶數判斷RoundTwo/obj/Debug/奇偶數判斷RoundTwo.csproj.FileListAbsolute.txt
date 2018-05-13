@@ -1,0 +1,7 @@
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\bin\Debug\奇偶數判斷RoundTwo.exe.config
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\bin\Debug\奇偶數判斷RoundTwo.exe
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\bin\Debug\奇偶數判斷RoundTwo.pdb
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\obj\Debug\奇偶數判斷RoundTwo.csprojResolveAssemblyReference.cache
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\obj\Debug\奇偶數判斷RoundTwo.csproj.CoreCompileInputs.cache
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\obj\Debug\奇偶數判斷RoundTwo.exe
+A:\寒假作業\Homework\奇偶數判斷RoundTwo\obj\Debug\奇偶數判斷RoundTwo.pdb

@@ -1,0 +1,7 @@
+A:\寒假作業\Homework\迴圈倒置Round2\bin\Debug\迴圈倒置Round2.exe.config
+A:\寒假作業\Homework\迴圈倒置Round2\bin\Debug\迴圈倒置Round2.exe
+A:\寒假作業\Homework\迴圈倒置Round2\bin\Debug\迴圈倒置Round2.pdb
+A:\寒假作業\Homework\迴圈倒置Round2\obj\Debug\迴圈倒置Round2.csproj.CoreCompileInputs.cache
+A:\寒假作業\Homework\迴圈倒置Round2\obj\Debug\迴圈倒置Round2.exe
+A:\寒假作業\Homework\迴圈倒置Round2\obj\Debug\迴圈倒置Round2.pdb
+A:\寒假作業\Homework\迴圈倒置Round2\obj\Debug\迴圈倒置Round2.csprojResolveAssemblyReference.cache

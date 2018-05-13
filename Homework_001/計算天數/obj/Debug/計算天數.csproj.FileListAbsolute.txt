@@ -1,0 +1,2 @@
+A:\寒假作業\Homework\計算天數\obj\Debug\計算天數.csprojResolveAssemblyReference.cache
+A:\寒假作業\Homework\計算天數\obj\Debug\計算天數.csproj.CoreCompileInputs.cache

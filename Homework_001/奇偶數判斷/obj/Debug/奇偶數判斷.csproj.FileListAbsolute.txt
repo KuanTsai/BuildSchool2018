@@ -1,0 +1,7 @@
+A:\寒假作業\Homework\奇偶數判斷\bin\Debug\奇偶數判斷.exe.config
+A:\寒假作業\Homework\奇偶數判斷\bin\Debug\奇偶數判斷.exe
+A:\寒假作業\Homework\奇偶數判斷\bin\Debug\奇偶數判斷.pdb
+A:\寒假作業\Homework\奇偶數判斷\obj\Debug\奇偶數判斷.csprojResolveAssemblyReference.cache
+A:\寒假作業\Homework\奇偶數判斷\obj\Debug\奇偶數判斷.csproj.CoreCompileInputs.cache
+A:\寒假作業\Homework\奇偶數判斷\obj\Debug\奇偶數判斷.exe
+A:\寒假作業\Homework\奇偶數判斷\obj\Debug\奇偶數判斷.pdb

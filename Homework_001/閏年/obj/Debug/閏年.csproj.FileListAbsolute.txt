@@ -1,0 +1,7 @@
+A:\寒假作業\Homework\閏年\bin\Debug\閏年.exe.config
+A:\寒假作業\Homework\閏年\bin\Debug\閏年.exe
+A:\寒假作業\Homework\閏年\bin\Debug\閏年.pdb
+A:\寒假作業\Homework\閏年\obj\Debug\閏年.csprojResolveAssemblyReference.cache
+A:\寒假作業\Homework\閏年\obj\Debug\閏年.csproj.CoreCompileInputs.cache
+A:\寒假作業\Homework\閏年\obj\Debug\閏年.exe
+A:\寒假作業\Homework\閏年\obj\Debug\閏年.pdb
