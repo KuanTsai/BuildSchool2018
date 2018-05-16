@@ -15,6 +15,7 @@ namespace 業績計算join2
     {
         List<SalesTable> list1 = new List<SalesTable>();
         List<ProductTable> list2 = new List<ProductTable>();
+
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace 業績計算join2
             GetSalesAmount(summary);
             GetProductAmount(summary);
         }
+
         private void InitialData()
         {
             try
@@ -66,6 +68,7 @@ namespace 業績計算join2
                 MessageBox.Show($"發生錯誤{ex.ToString()}");
             }
         }
+
         private void GetProductAmount(List<Summary> summary)
         {
             var result = summary.GroupBy((x) => x.Item).Select((x) =>
@@ -89,6 +92,7 @@ namespace 業績計算join2
             var best = result.FirstOrDefault((x) => x.Amount == result.Max((y) => y.Amount));
             label4.Text = best.Salesman;
         }
+
         private List<Summary> GetSummary()
         {
             var joinlist = from s in list1
@@ -100,18 +104,10 @@ namespace 業績計算join2
                                Salesman = s.Salesman,
                                Amount = p.Price * s.Quantity
                            };
+
             return joinlist.ToList();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
-    public class Summary
-    {
-        public string Salesman { get; set; }
-        public string Item { get; set; }
-        public int Amount { get; set; }
-    }
+
+   
 }

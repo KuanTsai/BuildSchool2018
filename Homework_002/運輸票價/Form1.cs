@@ -15,6 +15,7 @@ namespace 運輸票價
     public partial class Form1 : Form
     {
         List<ContactsTable> list = new List<ContactsTable>();
+
         public Form1()
         {
             StartStation startStation = new StartStation();
@@ -22,13 +23,9 @@ namespace 運輸票價
             InitializeComponent();
             TicketFare();
             toSouthRadioButton.CheckedChanged += RadioButton_CheckedChanged;
-            startComboBox.SelectedIndexChanged += StartComboBox_SelectedIndexChanged;
-
-            //startComboBox.DisplayMember = "StartStation";
-            //startComboBox.DataSource = list.Distinct(startStation).Select(x=>x.StartStation).ToList();
-            //endComboBox.DataSource = list.Distinct(endStation).Select(x => x.EndStation).ToList();
-            
+            startComboBox.SelectedIndexChanged += StartComboBox_SelectedIndexChanged;            
         }
+
         public void TicketFare()
         {
             try
@@ -59,6 +56,7 @@ namespace 運輸票價
                 MessageBox.Show(ex.ToString());
             }
         }
+
         public class StartStation : IEqualityComparer<ContactsTable>//Distinct實作
         {
             public bool Equals(ContactsTable x, ContactsTable y)
@@ -71,6 +69,7 @@ namespace 運輸票價
                 return obj.StartStation.GetHashCode();
             }
         }
+
         public class EndStation : IEqualityComparer<ContactsTable>
         {
             public bool Equals(ContactsTable x, ContactsTable y)
@@ -83,24 +82,23 @@ namespace 運輸票價
                 return obj.EndStation.GetHashCode();
             }
         }
+
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             StartStation startStation = new StartStation();
             EndStation endStation = new EndStation();
             if (toSouthRadioButton.Checked)
             {
-                //startComboBox.DataSource = list.GroupBy((x) => x.StartStation).Select((x) => x.Key).ToList();
                 startComboBox.DataSource = list.Distinct(startStation).Select(x => x.StartStation).ToList();
             }
             else
             {
-                //startComboBox.DataSource = list.GroupBy((x) => x.EndStation).Select((x) => x.Key).ToList();
                 startComboBox.DataSource = list.Distinct(endStation).Select(x => x.EndStation).ToList();
             }
         }
+
         private void StartComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (toSouthRadioButton.Checked)
             {
                 string start = startComboBox.SelectedItem.ToString();
@@ -111,7 +109,6 @@ namespace 運輸票價
                 string start = startComboBox.SelectedItem.ToString();
                 endComboBox.DataSource = list.Where((x) => x.EndStation == start).Select((x) => x.StartStation).ToList();
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)//計算價錢
@@ -146,11 +143,6 @@ namespace 運輸票價
             {
                 label4.Text = ticketFare.Fare.ToString();
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
