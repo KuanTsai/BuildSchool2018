@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "費式數列", "費式數列\費式數列.csproj", "{893D8B58-AC0A-487A-AD67-E2424FB7C312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "猴子選大王", "猴子選大王\猴子選大王.csproj", "{D35BF925-7378-4D02-807E-CBD53DAE18D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "滷味", "滷味\滷味.csproj", "{CF1B0668-877F-4E78-B38D-AEED9692409F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "停車費率", "停車費率\停車費率.csproj", "{D5D82E12-91B3-43DD-8487-63224BEA2041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "運輸票價", "運輸票價\運輸票價.csproj", "{FB1DE76C-1CCE-4857-B40B-5DF2E5C791D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "業績計算", "業績計算\業績計算.csproj", "{28FEB51B-BC3A-4F8D-AD0C-078C4B837395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "業績計算join2", "業績計算join2\業績計算join2.csproj", "{FDDF37DE-F6A3-4D46-B4D7-716533DFBA4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893D8B58-AC0A-487A-AD67-E2424FB7C312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893D8B58-AC0A-487A-AD67-E2424FB7C312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893D8B58-AC0A-487A-AD67-E2424FB7C312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893D8B58-AC0A-487A-AD67-E2424FB7C312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35BF925-7378-4D02-807E-CBD53DAE18D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35BF925-7378-4D02-807E-CBD53DAE18D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35BF925-7378-4D02-807E-CBD53DAE18D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35BF925-7378-4D02-807E-CBD53DAE18D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1B0668-877F-4E78-B38D-AEED9692409F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1B0668-877F-4E78-B38D-AEED9692409F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1B0668-877F-4E78-B38D-AEED9692409F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1B0668-877F-4E78-B38D-AEED9692409F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D82E12-91B3-43DD-8487-63224BEA2041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D82E12-91B3-43DD-8487-63224BEA2041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D82E12-91B3-43DD-8487-63224BEA2041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D82E12-91B3-43DD-8487-63224BEA2041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1DE76C-1CCE-4857-B40B-5DF2E5C791D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1DE76C-1CCE-4857-B40B-5DF2E5C791D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1DE76C-1CCE-4857-B40B-5DF2E5C791D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1DE76C-1CCE-4857-B40B-5DF2E5C791D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FEB51B-BC3A-4F8D-AD0C-078C4B837395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FEB51B-BC3A-4F8D-AD0C-078C4B837395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FEB51B-BC3A-4F8D-AD0C-078C4B837395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FEB51B-BC3A-4F8D-AD0C-078C4B837395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDF37DE-F6A3-4D46-B4D7-716533DFBA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDF37DE-F6A3-4D46-B4D7-716533DFBA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDF37DE-F6A3-4D46-B4D7-716533DFBA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDF37DE-F6A3-4D46-B4D7-716533DFBA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB1AECE5-C1B2-4CA6-8DFF-3A6F47AA576D}
+	EndGlobalSection
+EndGlobal
