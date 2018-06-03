@@ -7,7 +7,7 @@
 [迴圈倒置](https://github.com/KuanTsai/C-Sharp-practice/tree/master/Homework_001/%E8%BF%B4%E5%9C%88%E5%80%92%E7%BD%AERound2) / 
 [閏年](https://github.com/KuanTsai/C-Sharp-practice/tree/master/Homework_001/%E9%96%8F%E5%B9%B4)  
 
-目的：自我探索，邏輯訓練，善用工具書。  
+    主要目的：自我探索，邏輯訓練，善用工具書。  
 技術：使用 visual studio 2017 C# . NET Framework。  
 心得：這是學習兩周的寒假作業，在這個過程中沒有老師也沒有同學一起討論只能憑著上課的記憶以及使用工具書尋找適合用的方法來完成作業，也試著不害怕動手寫程式，程式運行錯誤時自己修BUG，思考如何用最簡單的方式使程式運行，這個寒假作業是靠自己力量寫的第一個程式，剛開始有些生疏，最後寫出來時那種興奮、雀躍的感覺，讓我有動力繼續努力學習下去。
 
