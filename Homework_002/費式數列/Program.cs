@@ -10,22 +10,36 @@ namespace 費式數列
     {
         static void Main(string[] args)
         {
+            var i = new Program();
+            i.Fibonacci();
+        }
+
+        public void Fibonacci()
+        {
             int N = 0;
             Console.Write("請輸入數字決定數列的項目:");
             bool X = int.TryParse(Console.ReadLine(), out N);
-            int[] list = new int[N];
-            list[0] = 0;
-            list[1] = 1;
-            for (int n = 2; n < N; n++)
+            if (!X)
             {
-                list[n] = list[n - 2] + list[n - 1];
+                Console.WriteLine("請輸入數字");
+                Fibonacci();
             }
-            
-            for (int i = 1; i < N; i++)
+            else
             {
-                Console.Write($" {list[i]}");
+                int[] list = new int[N];
+                list[0] = 0;
+                list[1] = 1;
+                for (int n = 2; n < N; n++)
+                {
+                    list[n] = list[n - 2] + list[n - 1];
+                }
+
+                for (int i = 1; i < N; i++)
+                {
+                    Console.Write($" {list[i]}");
+                }
+                Console.ReadLine();
             }
-            Console.ReadLine();
         }
     }
 }
