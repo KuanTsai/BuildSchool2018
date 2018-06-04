@@ -127,7 +127,6 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "AddForm";
             this.Text = "AddForm";
-            this.Load += new System.EventHandler(this.AddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);

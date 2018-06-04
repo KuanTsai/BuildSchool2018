@@ -17,34 +17,28 @@ namespace 油耗紀錄
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BindData(); 
+        }
+
         private void BindData()
         {
             var contacts = new ContactsModel();
             var list = contacts.RefuleTable.ToList();
-            //dataGridView1.DataSource = list;
             DateTime A = dateTimePicker1.Value;
             DateTime B = dateTimePicker2.Value;
             List<RefuleTable> findlist = new List<RefuleTable>();
-            foreach(var i in list)
+            foreach (var i in list)
             {
-                if(A <= i.RefuelingDate && B >= i.RefuelingDate)
+                if (A <= i.RefuelingDate && B >= i.RefuelingDate)
                 {
-                   findlist.Add(i);
+                    findlist.Add(i);
                 }
             }
             dataGridView1.DataSource = findlist.ToList();
-            label4.Text = $"{findlist.Max((x) => x.Kilometer) / findlist.Max((x) => x.Liter)- findlist.Min((x) => x.Liter)}";
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            BindData();
-            
-        }
-
-        private void QueryForm_Load(object sender, EventArgs e)
-        {
-
+            label4.Text = $"{findlist.Max((x) => x.Kilometer) / findlist.Max((x) => x.Liter) - findlist.Min((x) => x.Liter)}";
         }
     }
 }

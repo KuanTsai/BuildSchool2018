@@ -27,10 +27,10 @@
 技術：使用迴圈、演算法、使用TryParse做例外處理。  
 
 ## [運輸票價 / 改寫](https://github.com/KuanTsai/C-Sharp-practice/tree/master/Homework_002/%E9%81%8B%E8%BC%B8%E7%A5%A8%E5%83%B9)
-目的：將寒假作業的票價資料存入 local db 、使用IEquityComparer 做 Distinc。  
-技術：將資料存入 local db 在拿出來轉成 list 使用資料，實作IEquityComparer 消除Combobox裡重複的資料，善用事件委派。  
+目的：將寒假作業的票價資料存入 LocalDB 、使用IEquityComparer 做 Distinc。  
+技術：將資料存入 LocalDB 在拿出來轉成 list 使用資料，實作IEquityComparer 消除Combobox裡重複的資料，善用事件委派。  
 
 ## [業績計算 / 改寫](https://github.com/KuanTsai/C-Sharp-practice/tree/master/Homework_002/%E6%A5%AD%E7%B8%BE%E8%A8%88%E7%AE%97join2)
-目的：將寒假作業的業績需求改成使用 local db 、顯示出相同資料、使用 join 連結資料。  
-技術：將資料存入 local db 在拿出來轉成 list 使用資料，使用join將資料連結，顯示在DataGridView上。  
+目的：將寒假作業的業績需求改成使用 LocalDB 、顯示出相同資料、使用 join 連結資料。  
+技術：將資料存入 LocalDB 在拿出來轉成 list 使用資料，使用join將資料連結，顯示在DataGridView上。  
 

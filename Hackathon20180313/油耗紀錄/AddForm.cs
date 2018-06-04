@@ -46,10 +46,5 @@ namespace 油耗紀錄
         {
             Cleardata();
         }
-
-        private void AddForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

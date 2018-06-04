@@ -28,10 +28,5 @@ namespace 油耗紀錄
             var form = new QueryForm();
             form.Show();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

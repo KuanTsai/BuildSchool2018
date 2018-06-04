@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "質數問題", "質數問�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "累進稅率2", "累進稅率2\累進稅率2.csproj", "{89B265F9-D192-4AC4-9816-47F61A0CC9D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "累進稅率", "累進稅率\累進稅率.csproj", "{CCB3FECE-A17A-458C-9B9E-721373090EB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{89B265F9-D192-4AC4-9816-47F61A0CC9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89B265F9-D192-4AC4-9816-47F61A0CC9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89B265F9-D192-4AC4-9816-47F61A0CC9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB3FECE-A17A-458C-9B9E-721373090EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB3FECE-A17A-458C-9B9E-721373090EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB3FECE-A17A-458C-9B9E-721373090EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB3FECE-A17A-458C-9B9E-721373090EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

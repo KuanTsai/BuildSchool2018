@@ -10,8 +10,6 @@ namespace 質數問題
     {
         static void Main(string[] args)
         {
-            List<int> list = new List<int> {2};
-
             for (int x = 101; x < 200; x++)
             {
                 
