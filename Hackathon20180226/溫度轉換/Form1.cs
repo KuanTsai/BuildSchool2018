@@ -50,7 +50,7 @@ namespace 溫度轉換
         }
         private void button_Click(object sender, EventArgs e)//事件委派
         {
-            Button button = (Button)sender;//把sender轉為butter,sender是傳出去的值
+            Button button = (Button)sender;//把sender轉為button,sender是傳出去的值
             textBox1.Text += button.Text;
         }
 
