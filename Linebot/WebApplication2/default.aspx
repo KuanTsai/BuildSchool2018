@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="WebApplication2._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="WebApplication2._default" %>
 
 <!DOCTYPE html>
 
@@ -16,6 +16,20 @@
         <br />
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Push Sticker Message" />
     
+        <br />
+        <br />
+        <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Push Buttons Message" />
+        <br />
+        <br />
+        <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Push Carousel Message" />
+    
+        <br />
+        <br />
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Push Image Carousel Message" />
+        <br />
+        <br />
+        <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Push Confirm Message" />
+        <br />
     </div>
     </form>
 </body>
