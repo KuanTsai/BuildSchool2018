@@ -1,3 +1,4 @@
+using isRock.LineBot;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +25,24 @@ namespace WebApplication2.Controllers
                 var LineEvent = this.ReceivedMessage.events.FirstOrDefault();
                 //配合Line verify 
                 if (LineEvent.replyToken == "00000000000000000000000000000000") return Ok();
+                //replyToken不需要ID自動回復訊息(回復原本來源的人 ex.在群組裡)
                 //回覆訊息
-                if (LineEvent.type == "message")
+                if (LineEvent.message.type == "message")
                 {
+                    /*this.PushMessage(AdminUserId, "id:" + LineEvent.source.userId
+                                                  + " \n 您的朋友：" + GetUserInfo(LineEvent.source.userId).displayName
+                                                    + " \n 傳送了 " + LineEvent.message.text + " 給您");*/
                     if (LineEvent.message.type == "text") //收到文字
-                        this.ReplyMessage(LineEvent.replyToken, "你說了:" + LineEvent.message.text);
+                    {
+                        if (LineEvent.message.text == "Hello")
+                        {
+                            this.ReplyMessage(LineEvent.replyToken, GetUserInfo(LineEvent.source.userId).displayName + "你好");
+                        }
+                        else
+                        {
+                            this.ReplyMessage(LineEvent.replyToken, "你說了:" + LineEvent.message.text);
+                        }
+                    }
                     if (LineEvent.message.type == "sticker") //收到貼圖
                         this.ReplyMessage(LineEvent.replyToken, 1, 117);
                     if (LineEvent.message.type == "Location")
@@ -48,11 +62,11 @@ namespace WebApplication2.Controllers
                         var url = $"{baseURL}/temp/{filename}";
                         this.ReplyMessage(LineEvent.replyToken, $"你的圖片位於 \n {url}");
                     }
-                    if(LineEvent.message.type == "postback")
-                    {
-                        var data = LineEvent.postback.data;
-                        this.ReplyMessage(LineEvent.replyToken, $"觸發了postback");
-                    }
+                }
+                if (LineEvent.type == "postback")
+                {
+                    var data = LineEvent.postback.data;
+                    this.ReplyMessage(LineEvent.replyToken, $"觸發了postback");
                 }
                 //response OK
                 return Ok();

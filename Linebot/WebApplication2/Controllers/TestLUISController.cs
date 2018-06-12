@@ -11,9 +11,9 @@ namespace WebApplication2.Controllers
     {
         const string channelAccessToken = "mT1+MeHamE9Iy/pys2Mlnorzsb2mrRHxQPZgg6MwJ8h1w7LOV4mHqUME45K0uUa9O4OOynIptNqk156bKWr51ZXMBEXqKZ7pXTzcRH0YY5DABowHsB9wlD7ZG7gaCS1OgTsve08JqTyDgrYF7o+aGAdB04t89/1O/w1cDnyilFU=";
         const string AdminUserId = "Ua794d5fc8c988c9bc80a19ffe71ca4f5";
-        const string LuisAppId = "~~~改成你的LuisAppId~~~";
-        const string LuisAppKey = "~~~改成你的LuisAppKey~~~";
-        const string Luisdomain = "~~~改成你的Luisdomain~~~"; //ex.westus
+        const string LuisAppId = "5309c6e4-00a3-4229-a8b7-58d169f15c93";
+        const string LuisAppKey = "dc560c8db23444bfa93cfd749d55081a";
+        const string Luisdomain = "westus"; //ex.westus
 
         [Route("api/TestLUIS")]
         [HttpPost]
@@ -47,7 +47,7 @@ namespace WebApplication2.Controllers
                         {
                             repmsg = $"OK，你想 '{ret.TopScoringIntent.Name}'，";
                             if (ret.Entities.Count > 0)
-                                repmsg += $"想要的是 '{ ret.Entities.FirstOrDefault().Value.FirstOrDefault().Value}' ";
+                                repmsg += $"想要的是 '{ ret.Entities.LastOrDefault().Value.FirstOrDefault().Value}' ";
                         }
                         //回覆
                         this.ReplyMessage(LineEvent.replyToken, repmsg);

@@ -12,6 +12,9 @@ namespace WebApplication2
     {
         const string channelAccessToken = "mT1+MeHamE9Iy/pys2Mlnorzsb2mrRHxQPZgg6MwJ8h1w7LOV4mHqUME45K0uUa9O4OOynIptNqk156bKWr51ZXMBEXqKZ7pXTzcRH0YY5DABowHsB9wlD7ZG7gaCS1OgTsve08JqTyDgrYF7o+aGAdB04t89/1O/w1cDnyilFU=";
         const string AdminUserId = "Ua794d5fc8c988c9bc80a19ffe71ca4f5";
+        const string momoId = "U287cf0dfa65da363bce0fd282210edc";
+        List<string> UserId = new List<string>();
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,7 +26,7 @@ namespace WebApplication2
             var bot = new Bot(channelAccessToken);
             bot.PushMessage(AdminUserId, $"測試 {DateTime.Now.ToString()} ! ");
         }
-
+        
         protected void Button2_Click(object sender, EventArgs e)
         {
             var bot = new Bot(channelAccessToken);
@@ -92,7 +95,7 @@ namespace WebApplication2
                 actions = action2
             };
             //輪動(ButtonTemplate)
-            var CarouselTemplate = new isRock.LineBot.CarouselTemplate();
+            var CarouselTemplate = new CarouselTemplate();
 
             CarouselTemplate.columns.Add(Column);
             CarouselTemplate.columns.Add(Column2);
