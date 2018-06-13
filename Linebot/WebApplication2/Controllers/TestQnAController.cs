@@ -9,11 +9,11 @@ namespace StudyHostExampleLinebot.Controllers
 {
     public class TestQnAController : isRock.LineBot.LineWebHookControllerBase
     {
-        const string channelAccessToken = "~~~請改成你的Linebot的ChannelAccessToken~~~";
-        const string AdminUserId = "~~~改成你的AdminUserId~~~";
-        const string QnAKBId = "~~~改成你的QnA Service KB ID ~~~";
-        const string QnAKey = "~~~改成你的QnA Service Key~~~";
-        const string QnAdomain = "~~~改成你的QnA Service Domain~~~"; //ex.westus
+        const string channelAccessToken = "mT1+MeHamE9Iy/pys2Mlnorzsb2mrRHxQPZgg6MwJ8h1w7LOV4mHqUME45K0uUa9O4OOynIptNqk156bKWr51ZXMBEXqKZ7pXTzcRH0YY5DABowHsB9wlD7ZG7gaCS1OgTsve08JqTyDgrYF7o+aGAdB04t89/1O/w1cDnyilFU=";
+        const string AdminUserId = "Ua794d5fc8c988c9bc80a19ffe71ca4f5";
+        const string QnAKBId = "8ab18608-10e1-403b-91b0-3951d6e24acb";
+        const string QnAKey = "9fbc04d4-c00b-4dbc-ba3b-b1791b669530";
+        const string Endpoint = "https://qamakerapi.azurewebsites.net/qnamaker/knowledgebases/8ab18608-10e1-403b-91b0-3951d6e24acb/generateAnswer"; //ex.westus
         const string UnknowAnswer = "不好意思，您可以換個方式問嗎? 我不太明白您的意思...";
 
         [Route("api/TestQnA")]
@@ -31,12 +31,11 @@ namespace StudyHostExampleLinebot.Controllers
                 //回覆訊息
                 if (LineEvent.type == "message")
                 {
-                    var repmsg = "";
                     if (LineEvent.message.type == "text") //收到文字
                     {
                         //建立 MsQnAMaker Client
                         var helper = new isRock.MsQnAMaker.Client(
-                            QnAdomain, QnAKBId, QnAKey);
+                            new Uri(Endpoint), QnAKey);
                         var QnAResponse = helper.GetResponse(LineEvent.message.text.Trim());
                         var ret = (from c in QnAResponse.answers
                                    orderby c.score descending
