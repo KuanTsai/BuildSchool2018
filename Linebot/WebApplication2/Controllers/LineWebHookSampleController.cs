@@ -33,6 +33,26 @@ namespace WebApplication2.Controllers
                         this.ReplyMessage(LineEvent.replyToken, 1, 117);
                     if (LineEvent.message.type == "Location")
                         this.ReplyMessage(LineEvent.replyToken, LineEvent.message.address);
+                    if (LineEvent.message.type == "image")
+                    {
+                        //取得圖片的bytes
+                        var bytes = this.GetUserUploadedContent(LineEvent.message.id);
+                        //儲存圖片
+                        var guid = Guid.NewGuid().ToString();
+                        var filename = $"{guid}.png";
+                        var path = System.Web.Hosting.HostingEnvironment.MapPath("~/temp/");
+                        System.IO.File.WriteAllBytes(path + filename, bytes);
+                        //取得base URL
+                        var baseURL = Request.RequestUri.GetLeftPart(UriPartial.Authority);
+                        //取出外界可以讀取的檔名
+                        var url = $"{baseURL}/temp/{filename}";
+                        this.ReplyMessage(LineEvent.replyToken, $"你的圖片位於 \n {url}");
+                    }
+                    if (LineEvent.message.type == "postback")
+                    {
+                        var data = LineEvent.postback.data;
+                        this.ReplyMessage(LineEvent.replyToken, $"觸發了postback");
+                    }
                 }
                 //response OK
                 return Ok();
